@@ -528,6 +528,15 @@
     padding:20px;
   }
 
+  .about-photo img{
+    width:100%;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    border-radius:14px;
+    border:1px solid var(--border-soft);
+    display:block;
+  }
+
   .about-text h2{
     color:var(--navy);
   }
@@ -860,7 +869,7 @@
     .stats-inner{grid-template-columns:repeat(3,1fr);gap:20px;padding:44px 24px;}
     .services-grid{grid-template-columns:repeat(2,1fr);}
     .about-inner{grid-template-columns:1fr;}
-    .photo-placeholder{max-width:320px;margin:0 auto;}
+    .photo-placeholder, .about-photo img{max-width:320px;margin:0 auto;}
     .contact-highlights{grid-template-columns:1fr;}
   }
 
@@ -1008,9 +1017,7 @@
 <section class="about" id="sobre-mi">
   <div class="about-inner">
     <div class="about-photo">
-      <div class="photo-placeholder">
-        <span data-i18n="about_photo_placeholder">Fotografía próximamente</span>
-      </div>
+      <img src="emilio-garcia.jpg" alt="Emilio García, Abogado en Moraira" loading="lazy">
     </div>
     <div class="about-text">
       <h2 data-i18n="about_title">Sobre mí</h2>
